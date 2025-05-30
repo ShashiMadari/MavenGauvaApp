@@ -8,14 +8,13 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/ShashiMadari/MavenSurfire.git'
+                git branch: 'master', url: 'https://github.com/ShashiMadari/MavenGauvaApp.git'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'mvn clean package'  // Run Maven build
-            }
+                sh 'mvn clean package'  // Run Maven bui
         }
 
         stage('Test') {

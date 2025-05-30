@@ -16,6 +16,7 @@ pipeline {
             steps {
                 sh 'mvn clean package'  // Run Maven bui
         }
+        }
 
         stage('Test') {
             steps {
